@@ -13,7 +13,9 @@ Edit ` nes-keypress.py` to reflect your data, clock, and data pins on your Raspb
 Run it with ` sudo ./nes-keypress.py & ` to run it in the background. Start your emulator and begin using your NES controller.
 
 
-
+Notes
+-----
+Some timing portions of this are commented out. I noticed too much latency by adding ` time.sleep(0.02) ` after setting the latch pin to LOW. `nes-keypress` is largely a port of [piNes](https://github.com/WiringPi/WiringPi/blob/master/wiringPi/piNes.c) from WiringPi. Any criticism of `nes-keypress` is welcomed.
 
 License
 -----
